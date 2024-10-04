@@ -52,21 +52,25 @@ namespace Taak1
         private void redImage_MouseDown(object sender, MouseButtonEventArgs e)
         {
             kleurcodeTextBox.Text = "#FF0000";
+            informatieTextBox.Text = "Rood is de kleur van warmte";
         }
 
         private void yellowImage_MouseDown(object sender, MouseButtonEventArgs e)
         {
             kleurcodeTextBox.Text = "#FFFF00";
+            informatieTextBox.Text = "Geel is de kleur van levenslust";
         }
 
         private void greenImage_MouseDown(object sender, MouseButtonEventArgs e)
         {
             kleurcodeTextBox.Text = "#008000";
+            informatieTextBox.Text = "Groen is de kleur van genezing";
         }
 
         private void blueImage_MouseDown(object sender, MouseButtonEventArgs e)
         {
             kleurcodeTextBox.Text = "#0000FF";
+            informatieTextBox.Text = "Blauw is de kleur van intelligentie";
         }
     }
 }
