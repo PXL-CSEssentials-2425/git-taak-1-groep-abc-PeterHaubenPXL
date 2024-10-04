@@ -23,7 +23,7 @@ namespace Taak1
 
         private void redImage_MouseEnter(object sender, MouseEventArgs e)
         {
-            mainWindow.Background = Brushes.Red;
+            mainWindow.Background = Brushes.Red;            
         }
 
         private void yellowImage_MouseEnter(object sender, MouseEventArgs e)
@@ -45,5 +45,6 @@ namespace Taak1
         {
             mainWindow.Background = Brushes.LightGray;
         }
+
     }
 }
