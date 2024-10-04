@@ -20,5 +20,30 @@ namespace Taak1
         {
             InitializeComponent();
         }
+
+        private void redImage_MouseEnter(object sender, MouseEventArgs e)
+        {
+            mainWindow.Background = Brushes.Red;
+        }
+
+        private void yellowImage_MouseEnter(object sender, MouseEventArgs e)
+        {
+            mainWindow.Background = Brushes.Yellow;
+        }
+
+        private void greenImage_MouseEnter(object sender, MouseEventArgs e)
+        {
+            mainWindow.Background = Brushes.Green;
+        }
+
+        private void blueImage_MouseEnter(object sender, MouseEventArgs e)
+        {
+            mainWindow.Background = Brushes.Blue;
+        }
+
+        private void MouseLeave(object sender, MouseEventArgs e)
+        {
+            mainWindow.Background = Brushes.LightGray;
+        }
     }
 }
