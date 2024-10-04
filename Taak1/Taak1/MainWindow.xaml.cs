@@ -44,7 +44,29 @@ namespace Taak1
         private void MouseLeave(object sender, MouseEventArgs e)
         {
             mainWindow.Background = Brushes.LightGray;
+
+            kleurcodeTextBox.Text = "";
+            informatieTextBox.Text = "";
         }
 
+        private void redImage_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            kleurcodeTextBox.Text = "#FF0000";
+        }
+
+        private void yellowImage_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            kleurcodeTextBox.Text = "#FFFF00";
+        }
+
+        private void greenImage_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            kleurcodeTextBox.Text = "#008000";
+        }
+
+        private void blueImage_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            kleurcodeTextBox.Text = "#0000FF";
+        }
     }
 }
