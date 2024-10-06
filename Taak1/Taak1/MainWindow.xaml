@@ -9,17 +9,21 @@
         Background="LightGray"
         Name="mainWindow">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="361*"/>
+            <ColumnDefinition Width="439*"/>
+        </Grid.ColumnDefinitions>
         <TextBlock HorizontalAlignment="Left" Margin="75,43,0,0" TextWrapping="Wrap" Text="Kleurenpsychologie
                    " VerticalAlignment="Top" Width="158"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="681,23,0,0" VerticalAlignment="Top" Width="100" Source="/PXL.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="320,23,0,0" VerticalAlignment="Top" Width="100" Source="/PXL.png" Grid.Column="1"/>
         <Image MouseDown="redImage_MouseDown"  MouseLeave="MouseLeave" MouseEnter="redImage_MouseEnter" Name="redImage" HorizontalAlignment="Left" Height="100" Margin="132,95,0,0" VerticalAlignment="Top" Width="100" Source="/Rood.png"/>
-        <Image MouseDown="yellowImage_MouseDown"  MouseLeave="MouseLeave" MouseEnter="yellowImage_MouseEnter"  Name="yellowImage" HorizontalAlignment="Left" Height="100" Margin="315,95,0,0" VerticalAlignment="Top" Width="100" Source="/Geel.png"/>
+        <Image MouseDown="yellowImage_MouseDown"  MouseLeave="MouseLeave" MouseEnter="yellowImage_MouseEnter"  Name="yellowImage" HorizontalAlignment="Left" Height="100" Margin="315,95,0,0" VerticalAlignment="Top" Width="100" Source="/Geel.png" Grid.ColumnSpan="2"/>
         <Image MouseDown="greenImage_MouseDown"  MouseLeave="MouseLeave" MouseEnter="greenImage_MouseEnter"  Name="greenImage" HorizontalAlignment="Left" Height="100" Margin="132,213,0,0" VerticalAlignment="Top" Width="100" Source="/Groen.png"/>
-        <Image MouseDown="blueImage_MouseDown"  MouseLeave="MouseLeave"  MouseEnter="blueImage_MouseEnter"  Name="blueImage" HorizontalAlignment="Left" Height="100" Margin="315,213,0,0" VerticalAlignment="Top" Width="100" Source="/Blauw.png"/>
+        <Image MouseDown="blueImage_MouseDown"  MouseLeave="MouseLeave"  MouseEnter="blueImage_MouseEnter"  Name="blueImage" HorizontalAlignment="Left" Height="100" Margin="315,213,0,0" VerticalAlignment="Top" Width="100" Source="/Blauw.png" Grid.ColumnSpan="2"/>
         <TextBlock HorizontalAlignment="Left" Margin="75,318,0,0" TextWrapping="Wrap" Text="Kleurcode:" VerticalAlignment="Top" Width="158"/>
         <TextBlock HorizontalAlignment="Left" Margin="75,361,0,0" TextWrapping="Wrap" Text="Informatie:" VerticalAlignment="Top" Width="158"/>
-        <TextBox Name="kleurcodeTextBox" Background="Transparent" HorizontalAlignment="Left" Margin="182,322,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="322"/>
-        <TextBox Name="informatieTextBox" Background="Transparent" HorizontalAlignment="Left" Margin="182,365,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="322"/>
+        <TextBox Name="kleurcodeTextBox" Background="Transparent" HorizontalAlignment="Left" Margin="182,322,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="322" Grid.ColumnSpan="2"/>
+        <TextBox Name="informatieTextBox" Background="Transparent" HorizontalAlignment="Left" Margin="182,365,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="322" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
